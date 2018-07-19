@@ -1,0 +1,32 @@
+body {
+    background-color: red;
+    
+}
+
+.card {
+    
+    display: flex;
+}
+
+#inlineFormCheckMD{
+    width: 80%;
+    display: flex;
+}
+
+.form-control{
+    width: 80%;
+    display: flex;
+}
+
+/*for footer*/
+
+#mainFooter {
+    background: rgba(42, 44, 44, 0.842);
+}
+  
+.socialIcons {
+line-height: 7rem; 
+}
+/* .archive {
+    color: black;
+} */
