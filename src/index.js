@@ -2,8 +2,8 @@ import { generate } from 'rxjs/internal/observable/generate';
 
 var controllers = require('./controllers')
 // var bootstrap = require('bootstrap')
-require ('./css/styles.css') 
-
+require ('./css/styles.css')  
+ 
 //require ('../node_modules/bootstrap/dist/css/bootstrap.css')
 require ('../node_modules/jquery/dist/jquery.js');
 window.onload = function(){
@@ -115,7 +115,7 @@ window.onload = function(){
           card.appendChild(ul);        
           
           var button = document.createElement('button');
-          button.className="btn btn-danger btn-sm float-right archive";
+          button.className="btn btn-danger btn-sm float-right archive"+" "+"arc_"+cardsData[i].id;
           button.appendChild(document.createTextNode('Archive'));
           card.appendChild(button);
         
@@ -333,13 +333,25 @@ window.onload = function(){
          
          function deleteRecordFromJsonServer(e){
            console.log(e)
-           if(e.target.classList.contains('archive')){            
-             var card = e.target.parentElement;
-             var cardTitle = card.firstChild.textContent;
-             //var ul = li.parentElement;            
-             //ul.parentElement.lastElementChild.textContent = document.createTextNode((new Date()).toLocaleString()).data;            
+           if(e.target.classList.contains('archive')){ 
+
+            var array = Array.from(e.target.classList);
+            var id = array[5].substring(4);
+            
+            delete_item(id);
            }
          }
+
+         function delete_item(id) {
+          // var id = $(this).attr('data-id');
+          jQuery.ajax({
+              url: 'http://localhost:3000/cards/' + id,
+              type: 'DELETE',
+              success: function(data) {
+                  //show_items();
+              }
+          });
+        }
 
          var mainFooter = document.getElementById('mainFooter');
          mainFooter.style.background = "cadetblue";
