@@ -1,2 +1,2 @@
-var cards = require('./cards.json');
+const cards = require('./cards.js');
 

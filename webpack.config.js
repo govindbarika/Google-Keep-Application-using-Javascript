@@ -19,12 +19,11 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        use: {
-          loader:'style-loader', 
-          loader:'css-loader'}
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
       }
     ]
   },
+  devtool: "cheap-eval-source-map",
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',

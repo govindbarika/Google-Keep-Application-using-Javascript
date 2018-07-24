@@ -1,138 +1,112 @@
 {
   "cards": [
     {
-      "id": 1,
-      "cardTitle": "cardtitle1",
+      "cardTitle": "AAAAA",
       "tasks": [
+        {
+          "checked": true,
+          "task": "aaa"
+        },
         {
           "checked": "",
-          "task": "task1"
+          "task": "aaaa"
         },
         {
           "checked": "",
-          "task": "task2"
-        },
-        {
-          "checked": true,
-          "task": "task3"
+          "task": "aaaaaaa"
         }
-      ]
+      ],
+      "id": 1
     },
     {
-      "id": 2,
-      "cardTitle": "cardtitle2",
+      "cardTitle": "BBBBB",
       "tasks": [
         {
           "checked": true,
-          "task": "task21"
+          "task": "bbb"
         },
         {
           "checked": true,
-          "task": "task22"
+          "task": "bb"
         },
         {
-          "checked": true,
-          "task": "task23"
+          "checked": "",
+          "task": "b"
         }
-      ]
+      ],
+      "id": 2
     },
     {
-      "id": 3,
-      "cardTitle": "cardtitle3",
+      "cardTitle": "CCCC",
       "tasks": [
         {
           "checked": true,
-          "task": "task31"
+          "task": "ccc"
         },
         {
-          "checked": false,
-          "task": "task32"
+          "checked": true,
+          "task": "cc"
         },
         {
-          "checked": false,
-          "task": "task33"
+          "checked": true,
+          "task": "cccc"
         }
-      ]
+      ],
+      "id": 3
     },
     {
-      "cardTitle": "cardtitle4",
+      "cardTitle": "DDDDDD",
       "tasks": [
         {
           "checked": true,
-          "task": "task41"
+          "task": "dddd"
         },
         {
-          "checked": false,
-          "task": "task42"
+          "checked": "",
+          "task": "ddd"
         },
         {
-          "checked": false,
-          "task": "task43"
-        },
-        {
-          "checked": false,
-          "task": "task44"
+          "checked": true,
+          "task": "ddd"
         }
       ],
       "id": 4
     },
     {
-      "cardTitle": "zzzzzzzzz",
+      "cardTitle": "EEEE",
       "tasks": [
         {
           "checked": true,
-          "task": "zzzzz"
+          "task": "eee"
+        },
+        {
+          "checked": "",
+          "task": "ee"
+        },
+        {
+          "checked": "",
+          "task": "e"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "cardTitle": "FFFF",
+      "tasks": [
+        {
+          "checked": true,
+          "task": "ff"
         },
         {
           "checked": true,
-          "task": "zzzzzzzzzz"
+          "task": "fff"
         },
         {
           "checked": true,
-          "task": "zzzzzzzzz"
-        },
-        {
-          "checked": true,
-          "task": "zzzzzzzzzz"
+          "task": "fff"
         }
       ],
       "id": 6
-    },
-    {
-      "cardTitle": "yyyyyy",
-      "tasks": [
-        {
-          "checked": "",
-          "task": "y"
-        },
-        {
-          "checked": true,
-          "task": "yy"
-        },
-        {
-          "checked": "",
-          "task": "yyyy"
-        }
-      ],
-      "id": 7
-    },
-    {
-      "cardTitle": "govind",
-      "tasks": [
-        {
-          "checked": "",
-          "task": "barika"
-        },
-        {
-          "checked": true,
-          "task": "ravy"
-        },
-        {
-          "checked": "",
-          "task": "raju"
-        }
-      ],
-      "id": 8
     }
   ]
 }

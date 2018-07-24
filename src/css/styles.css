@@ -1,32 +1,33 @@
+
+/* @import 'node_modules/bootstrap/dist/css/bootstrap';
+@import 'base';
+@import 'module';
+@import 'layout'; */
+
+
 body {
-    background-color: red;
+    background-color: rgb(228, 225, 228);
     
 }
 
-.card {
-    
-    display: flex;
+#mainFooter{
+    background: cadetblue;
 }
 
-#inlineFormCheckMD{
-    width: 80%;
-    display: flex;
+#headertag{
+    height: "80px";
 }
 
-.form-control{
-    width: 80%;
-    display: flex;
+
+#formGroupExampleInput{
+    width: "80%";
 }
 
-/*for footer*/
-
-#mainFooter {
-    background: rgba(42, 44, 44, 0.842);
+/* .card-footer{
+    position: absolute;
+    bottom: .1em;
+    height: 4rem;
 }
-  
-.socialIcons {
-line-height: 7rem; 
-}
-/* .archive {
-    color: black;
+.card ul{
+    margin-bottom: 8rem !important;
 } */
