@@ -12,9 +12,11 @@ import { deleteRecordFromJsonServer } from './services/deleteCardService'
 
 import {displayCards} from './view/displayCard'
 
+import {getCards} from './services/getCardsService'
+
 window.onload = function () {
 
-  function getSorted(className) {
+  const getSorted = (className) => {
     $("." + className).sortable();
     $("." + className).disableSelection();
   }
@@ -26,25 +28,7 @@ window.onload = function () {
     console.log(err)
   });
 
-  function getCards() {
-    return new Promise(function (resolve, reject) {
-
-      var settings = {
-        "async": false,
-        "crossDomain": true,
-        "url": "http://localhost:3000/cards",
-        "method": "GET",
-        "headers": {
-          "Cache-Control": "no-cache"
-        }
-      }
-      $.ajax(settings).done(function (response) {
-        resolve(response);
-      });
-
-    })
-  }
-
+ 
   const addNewTask = document.getElementById('addNewTask');
   addNewTask.onclick = addTask;
 

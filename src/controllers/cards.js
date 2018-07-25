@@ -1,6 +1,5 @@
 export function addTask(event){
     event.preventDefault(); 
-    console.log(1);
     const cardForm = document.getElementById('cardForm');
 
     const items = document.getElementById('items');
@@ -24,7 +23,6 @@ export function addTask(event){
     li.appendChild(inputDiv);
     li.appendChild(inputDiv1);
     li.appendChild(button);
-    li.focus();
     items.appendChild(li);
 
   

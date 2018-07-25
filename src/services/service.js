@@ -1,8 +1,6 @@
+import {store} from '../store'
 
-function getSorted(className) {
-    $("." + className).sortable();
-    $("." + className).disableSelection();
-}
+
 //save modal data on body
 
 export function saveModalData(event) {
@@ -105,6 +103,8 @@ export function saveModalData(event) {
         "tasks": tasks
     }
 
+    store.dispatch({type:'SAVE_CARD', cardData});
+
     //storing into json-server using ajax call
     console.log(newcards);
     const cardJsonString = JSON.stringify(cardData);
@@ -131,3 +131,8 @@ export function saveModalData(event) {
     return newcards;
 }
 
+
+function getSorted(className) {
+    $("." + className).sortable();
+    $("." + className).disableSelection();
+}

@@ -1,6 +1,12 @@
+import {store} from '../store'
+
+//subscribe
+store.subscribe(() => {
+     displayCards(store.getState())
+});
 
 export function displayCards(cardsData) {
-    if (cardsData == undefined) {
+    if (cardsData == undefined ) {
         return;
     }
     var newcards = document.getElementById("newcards");
@@ -69,7 +75,8 @@ export function displayCards(cardsData) {
 
 
         const button = document.createElement('button');
-        button.className = "btn btn-danger btn-sm float-right archive" + " " + "arc_" + cardsData[i].id;
+        var buttonId = (cardsData[i].id) == undefined? "": "arc_"+cardsData[i].id;
+        button.className = "btn btn-danger btn-sm float-right archive" + " " + buttonId;
         button.appendChild(document.createTextNode('Archive'));
         card.appendChild(button);
 

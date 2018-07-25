@@ -9,7 +9,7 @@ export function deleteRecordFromJsonServer(e) {
     }
 }
 
-function delete_item(id) {
+const delete_item = (id) => {
     jQuery.ajax({
         url: 'http://localhost:3000/cards/' + id,
         type: 'DELETE',
