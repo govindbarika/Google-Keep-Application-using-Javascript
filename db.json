@@ -1,130 +1,76 @@
 {
   "cards": [
     {
-      "cardTitle": "AAAAAAA",
+      "cardTitle": "AAAAA",
       "tasks": [
         {
-          "checked": true,
-          "task": "aaaaaa"
+          "checked": "",
+          "task": "aaaa"
+        },
+        {
+          "checked": "",
+          "task": "aaaa"
         },
         {
           "checked": "",
           "task": "aaaaa"
-        },
-        {
-          "checked": "",
-          "task": "aaaaaaaaaaa"
         }
       ],
-      "id": 1
+      "id": 7
     },
     {
-      "cardTitle": "BBBBBB",
+      "cardTitle": "BBBBBBB",
       "tasks": [
         {
           "checked": true,
-          "task": "bbbbb"
+          "task": "bbbb"
         },
         {
           "checked": "",
-          "task": "bbbbbb"
+          "task": "bbbb"
         },
         {
           "checked": "",
-          "task": "bbbbbbbb"
+          "task": "bbbb"
         }
       ],
-      "id": 2
+      "id": 8
     },
     {
-      "cardTitle": "CCCCCCC",
+      "cardTitle": "CCCCCC",
       "tasks": [
+        {
+          "checked": true,
+          "task": "ccc"
+        },
         {
           "checked": "",
           "task": "cccc"
         },
         {
-          "checked": "",
-          "task": "ccccc"
+          "checked": true,
+          "task": "ccc"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "cardTitle": "DDDDD",
+      "tasks": [
+        {
+          "checked": true,
+          "task": "dddddd"
         },
         {
           "checked": true,
-          "task": "cccccccccc"
-        }
-      ],
-      "id": 3
-    },
-    {
-      "cardTitle": "DDDDDD",
-      "tasks": [
-        {
-          "checked": "",
-          "task": "ddddd"
-        },
-        {
-          "checked": "",
           "task": "dddd"
         },
         {
-          "checked": "",
-          "task": "dddddd"
+          "checked": true,
+          "task": "ddddd"
         }
       ],
-      "id": 4
-    },
-    {
-      "cardTitle": "EEEEEE",
-      "tasks": [
-        {
-          "checked": true,
-          "task": "eee"
-        },
-        {
-          "checked": "",
-          "task": "eeee"
-        },
-        {
-          "checked": true,
-          "task": "eeeeeee"
-        }
-      ],
-      "id": 5
-    },
-    {
-      "cardTitle": "FFFFFF",
-      "tasks": [
-        {
-          "checked": "",
-          "task": "ffff"
-        },
-        {
-          "checked": "",
-          "task": "fffff"
-        },
-        {
-          "checked": "",
-          "task": "fffffff"
-        }
-      ],
-      "id": 6
-    },
-    {
-      "cardTitle": "GGGGGGG",
-      "tasks": [
-        {
-          "checked": "",
-          "task": "ggggg"
-        },
-        {
-          "checked": true,
-          "task": "ggggg"
-        },
-        {
-          "checked": true,
-          "task": "gggggggg"
-        }
-      ],
-      "id": 7
+      "id": 10
     }
   ]
 }

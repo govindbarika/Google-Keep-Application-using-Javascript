@@ -1,10 +1,12 @@
+import { store } from '../store'
+
 export function deleteRecordFromJsonServer(e) {
     console.log(e)
     if (e.target.classList.contains('archive')) {
 
         const array = Array.from(e.target.classList);
         const id = array[5].substring(4);
-
+        store.dispatch({ type: 'DELETE_CARD', id: id });
         delete_item(id);
     }
 }

@@ -1,8 +1,8 @@
 import {createStore} from 'redux';
 
 import {keepApp} from './reducer'
-var card = { tasks: [], cardTitle: "" };
+var cards = [];
 
-export var store = createStore(keepApp, card);
+export var store = createStore(keepApp, cards);
 
  

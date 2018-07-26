@@ -95,7 +95,7 @@ export function saveModalData(event) {
 
     card.appendChild(cardFooter);
 
-    newcards.appendChild(card);
+    //newcards.appendChild(card);
     getSorted(ul.className);
 
     const cardData = {
@@ -103,7 +103,7 @@ export function saveModalData(event) {
         "tasks": tasks
     }
 
-    store.dispatch({type:'SAVE_CARD', cardData});
+    store.dispatch({type:'SAVE_CARD', cardData:[cardData]});
 
     //storing into json-server using ajax call
     console.log(newcards);

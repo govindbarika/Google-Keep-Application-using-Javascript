@@ -2,6 +2,8 @@ import {store} from '../store'
 
 //subscribe
 store.subscribe(() => {
+    console.log("display call from displayCard.js of subscribe");
+    console.log(store.getState());
      displayCards(store.getState())
 });
 
@@ -12,6 +14,7 @@ export function displayCards(cardsData) {
     var newcards = document.getElementById("newcards");
     newcards.style.display = "flex";
     newcards.style.flexWrap = "wrap";
+    console.log("displayCards executed");
     for (let i = 0; i < cardsData.length; i++) {
         const card = document.createElement("div");
         const cardHeader = document.createElement("div");
@@ -89,10 +92,12 @@ export function displayCards(cardsData) {
         card.appendChild(span);
         newcards.appendChild(card);
         getSorted(ul.className);
-
+        
 
     }
-return newcards;
+    //location.reload();
+    console.log(newcards);
+//return newcards;
 
 }
 

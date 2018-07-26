@@ -10,25 +10,37 @@ import { saveModalData } from './services/service'
 
 import { deleteRecordFromJsonServer } from './services/deleteCardService'
 
-import {displayCards} from './view/displayCard'
+import { displayCards } from './view/displayCard'
 
-import {getCards} from './services/getCardsService'
+import { getCards } from './services/getCardsService'
+import { store } from './store'
+
+
+if (window.performance) {
+  console.log("window.performance works fine on this browser");
+}
+
+if (performance.navigation.type == 1) {
+  console.info("This page is reloaded");
+
+  getCards().then(function (cardsData) {
+    console.log("display call from index.js");
+    store.dispatch({ type: 'GET_CARDS', cardsData });
+
+    //displayCards(cardsData)
+
+  }).catch(function (err) {
+    console.log(err)
+  });
+}
 
 window.onload = function () {
-
   const getSorted = (className) => {
     $("." + className).sortable();
     $("." + className).disableSelection();
   }
 
-  getCards().then(function (cardsData) {
-    displayCards(cardsData)
 
-  }).catch(function (err) {
-    console.log(err)
-  });
-
- 
   const addNewTask = document.getElementById('addNewTask');
   addNewTask.onclick = addTask;
 
